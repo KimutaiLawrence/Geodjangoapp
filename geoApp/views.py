@@ -9,7 +9,8 @@ def home(request):
     shp_dir = os.path.join(os.getcwd(), 'media', 'shp')
 
     m = folium.Map(location=[0.0236, 37.9062], zoom_start=6)
-
+    
+    #styling
     style_Kenya_county_dd = {'fillColor': '#228B22', 'color': '#228B22'}
     style_kenya_wetlands = {'color': 'blue'}
     style_kenya_all_towns = {'color': 'red'}
